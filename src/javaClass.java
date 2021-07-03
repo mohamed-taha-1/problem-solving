@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class javaClass {
 	public static void main(String args[]) {
@@ -44,8 +45,8 @@ public class javaClass {
 		
 //		int i =5; // int => is primitive data type 
 	
-		String s= "javapoint";
-		 String ch[];
+//		String s= "javapoint";
+//		 String ch[];
 		 
 //		for(int j=0; j< ch.length()	;j++) {
 //			char c = s.charAt(j);
@@ -68,23 +69,23 @@ public class javaClass {
 //			}
 //		     
 		     
-		 String output = "";
-		    for (int start = 0; start < input.length(); start++) {
-		        Set<Character> visited = new HashSet<>();
-		        int end = start;
-		        for (; end < input.length(); end++) {
-		            char currChar = input.charAt(end);
-		            if (visited.contains(currChar)) {
-		                break;
-		            } else {
-		                visited.add(currChar);
-		            }
-		        }
-		        if (output.length() < end - start + 1) {
-		            output = input.substring(start, end);
-		        }
-		    }
-		    return output;
+		
+       System.out.println("Enter the number ");
+		Scanner sc= new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		if(num<=2) {
+			System.out.println("no");
+			return ;
+		}
+		
+		if(num %2 == 0) {
+			   System.out.println("yes");  
+		}else {
+			System.out.println("no ");
+		}
+
+	
 		
 		
 		
